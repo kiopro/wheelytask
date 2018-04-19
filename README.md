@@ -1,9 +1,11 @@
 # wheelytask
 
-1. make build_containers // for build docker containers
-2. docker-compose up // for up services
+1. make build_containers // build docker containers
+2. docker-compose up // up services
 
-```
+API: GET request for price with example JSON payload
+
+```shell
 curl --request GET \
   --url 'http://localhost:4567/get_price?=' \
   --header 'content-type: application/json' \
