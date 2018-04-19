@@ -1,0 +1,22 @@
+syntax = "proto3";
+
+package wheelypb;
+
+service TripInformation {
+  rpc GetTripInformation(Trip) returns (TripInformationResponse) {}
+}
+
+message Point {
+  double lat = 1;
+  double long = 2;
+}
+
+message Trip {
+  Point start = 1;
+  Point end = 2;
+}
+
+message TripInformationResponse {
+  int64 distance = 1;
+  int64 time = 2;
+}

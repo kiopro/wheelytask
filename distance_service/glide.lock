@@ -1,0 +1,12 @@
+hash: 29e490d532504c3ea669fee2a928459273db20280a5567af1cda1b2d0063e8ff
+updated: 2018-04-18T01:08:09.929917+03:00
+imports:
+- name: github.com/labstack/echo
+  version: 6d227dfea4d2e52cb76856120b3c17f758139b4e
+- name: github.com/rs/zerolog
+  version: 05eafee0eb17d0150591a8f30f0fa592cc9b7471
+- name: google.golang.org/grpc
+  version: d11072e7ca9811b1100b80ca0269ac831f06d024
+- name: gopkg.in/resty.v1
+  version: f8815663de1e64d57cdd4ee9e2b2fa96977a030e
+testImports: []

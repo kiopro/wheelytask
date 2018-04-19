@@ -1,0 +1,26 @@
+version: '2'
+services:
+  price_service:
+    image: kiopro/price_service:latest
+    container_name: price_service
+    environment:
+      DISTANCE_S: "distance_service:8222"
+    ports:
+      - 4567:4567
+    networks:
+      - wheelynetwork
+  distance_service:
+    image: kiopro/distance-service:latest
+    container_name: distance_service
+    environment:
+      GRPC_PORT: ":8222"
+      HTTP_PORT: ":8123"
+      GOOGLE_API_KEY: "AIzaSyBTDVrVz2bcR-VY5lDGy1B5tUR7qZqqJWo"
+    ports:
+      - 8222:8222
+      - 8123:8123
+    networks:
+      - wheelynetwork
+
+networks:
+  wheelynetwork:

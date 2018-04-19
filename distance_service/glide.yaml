@@ -1,0 +1,10 @@
+package: github.com/kiopro/tripinfo
+import:
+- package: github.com/labstack/echo
+  version: ^3.3.5
+- package: gopkg.in/resty.v1
+  version: ^1.4.0
+- package: github.com/rs/zerolog
+  version: ^1.6.0
+- package: google.golang.org/grpc
+  version: ^1.11.3
